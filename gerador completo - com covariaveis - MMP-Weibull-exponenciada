@@ -27,7 +27,7 @@ rweibull_we <- function(n,pforma1,pforma2,pscale){
 #x2  - covariável 2
 #x3  - covariável 3
 
-mmp_exp_Weibull = function(n,u,pforma1,pforma2,pscale,beta,x0){ #função para gerar dados com %fc e %cens (obs.: se u=0 => %cens = 0)
+mmp_exp_Weibull = function(n,u,pforma1,pforma2,pscale,beta,x0,x1,x2,x3){ #função para gerar dados com %fc e %cens (obs.: se u=0 => %cens = 0)
   #1 passo
   X=matrix(c(x0,x1,x2,x3),nrow=n)
   eta=X%*%beta
